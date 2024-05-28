@@ -2,9 +2,10 @@ type Props = {
   name: string;
   description?: string;
   image: string;
+  price: string;
 };
 
-const Class = ({ name, description, image }: Props) => {
+const Class = ({ name, description, image, price }: Props) => {
   const overlayStyles = `p-5 absolute z-30 flex
   h-[380px] w-[450px] flex-col items-center justify-center
   whitespace-normal bg-primary-500 text-center text-white
@@ -15,6 +16,7 @@ const Class = ({ name, description, image }: Props) => {
       <div className={overlayStyles}>
         <p className="text-2xl">{name}</p>
         <p className="mt-5">{description}</p>
+        <p className="my-5 underline font-bold text-xl">{price}</p>
       </div>
       <img alt={`${image}`} src={image} />
     </li>

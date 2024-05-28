@@ -31,32 +31,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
-                <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Link
-                    page="Головна"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Переваги"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Наші класи"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Контакти"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                </div>
+                  <ul className={`${flexBetween} gap-8 text-sm`}>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="#benefits">Переваги</a></li>
+                    <li><a href="#ourclasses">Наші класи</a></li>
+                    <li><a href="#contactus">Контакти</a></li>
+                  </ul>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Увійти</p>
+                  <a href="#contactus">Увійти</a>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Стати членом
+                    <a href="#contactus">Стати членом</a>
                   </ActionButton>
                 </div>
               </div>
@@ -83,28 +67,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-            <Link
-              page="Головна"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Переваги"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Наші класи"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Контакти"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-          </div>
+            <ul className="ml-[33%] flex flex-col gap-10 text-2xl">
+              <li><a href="/">Головна</a></li>
+              <li><a href="#benefits">Переваги</a></li>
+              <li><a href="#ourclasses">Наші класи</a></li>
+              <li><a href="#contactus">Контакти</a></li>
+            </ul>
         </div>
       )}
     </nav>

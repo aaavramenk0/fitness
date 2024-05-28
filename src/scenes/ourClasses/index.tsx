@@ -72,7 +72,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5">
+          <div className="md:w-3/5" >
             <HText>НАШІ КЛАСИ</HText>
             <p className="py-5">
               Відкрийте для себе світ наших класів, де кожен урок - це
